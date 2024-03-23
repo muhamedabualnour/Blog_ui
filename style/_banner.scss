@@ -1,0 +1,54 @@
+#banner{
+    margin-top: 100px;
+    position: relative;
+
+    h1{
+        font-size: 60px;
+    }
+
+    #left{
+        width: 200px;
+        position: absolute;
+        top: 50px;
+        left: 100px;
+    }
+
+    #right{
+        width: 200px;
+        position: absolute;
+        top: 50px;
+        right: 100px;
+    }
+
+    form{
+        position: relative;
+        width: 400px;
+        margin: 0 auto;
+        margin-top: 30px;
+        background-color: #ffffff;
+        border: 1px solid #e5e5e5;
+        padding:  10px;
+        border-radius: 20px;
+
+        input{
+            width: 80%;
+            display: inline-block;
+            background-color: transparent;
+            border: 0;
+        }
+
+        button{
+            background-color: $mainColor;
+            display: inline-block;
+            color: white;
+            border: 0;
+            border-radius: 10px;
+            padding: 5px 15px;
+            margin-left: 10px;
+
+            &:hover{
+                background-color: lighten($mainColor,10%);
+            }
+        }
+    }
+}
